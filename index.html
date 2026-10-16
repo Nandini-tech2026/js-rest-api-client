@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mini Store</h1>
+  <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+</header>
+<main>
+  <div id="error" class="error" hidden></div>
+  <input id="search" type="search" placeholder="Search products...">
+  <div class="row">
+    <div id="tabs" class="tabs"></div>
+    <select id="sort">
+      <option value="">Sort</option>
+      <option value="asc">Price: Low to High</option>
+      <option value="desc">Price: High to Low</option>
+      <option value="name">Name A-Z</option>
+    </select>
+  </div>
+  <div id="grid" class="grid"></div>
+  <aside id="cart" class="cart" hidden></aside>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
