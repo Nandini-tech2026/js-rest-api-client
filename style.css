@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:#f6f6f8;color:#222}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#111;color:#fff;position:sticky;top:0;z-index:2}
+header h1{font-size:1.2rem;margin:0}
+button{cursor:pointer;border:0;border-radius:8px;padding:8px 12px;background:#f5b800;font-weight:600}
+main{padding:12px;max-width:1000px;margin:auto}
+input,select{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin-bottom:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.tabs{display:flex;gap:6px;overflow-x:auto;flex:1}
+.tabs button{background:#e5e5e9;white-space:nowrap}
+.tabs button.active{background:#111;color:#fff}
+#sort{width:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.card{background:#fff;border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.card img{height:120px;object-fit:contain}
+.card h3{font-size:.8rem;margin:0;flex:1}
+.skeleton{height:230px;border-radius:10px;background:linear-gradient(90deg,#e5e5e9 25%,#f2f2f5 50%,#e5e5e9 75%);background-size:200% 100%;animation:s 1.2s infinite}
+@keyframes s{to{background-position:-200% 0}}
+.error{background:#fde8e8;color:#b00020;padding:10px;border-radius:8px;margin-bottom:8px}
+.cart{position:fixed;right:0;bottom:0;left:0;background:#fff;padding:14px;border-radius:16px 16px 0 0;box-shadow:0 -4px 16px #0003;max-height:50vh;overflow:auto}
+.cart li{display:flex;justify-content:space-between;gap:8px;margin:6px 0}
